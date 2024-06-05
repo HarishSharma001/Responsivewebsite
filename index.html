@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+       <div class="container">
+        <img src="logo.jpg" alt="" class="logo" width="200px">
+        <h1>Monk Coding</h1></div>
+       <ul class="nav">
+        <li class="mobile"><a href="#">Home</a></li>
+        <li class="mobile"><a href="#">About</a></li>
+        <li class="mobile"><a href="#">Contact us</a></li>
+        <li class="mobile"><a href="#">Services</a></li>
+        <li class="menu" onclick="shownav()" id="menu-btn"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 48 48"><path d="M 5.5 9 A 1.50015 1.50015 0 1 0 5.5 12 L 42.5 12 A 1.50015 1.50015 0 1 0 42.5 9 L 5.5 9 z M 5.5 22.5 A 1.50015 1.50015 0 1 0 5.5 25.5 L 42.5 25.5 A 1.50015 1.50015 0 1 0 42.5 22.5 L 5.5 22.5 z M 5.5 36 A 1.50015 1.50015 0 1 0 5.5 39 L 42.5 39 A 1.50015 1.50015 0 1 0 42.5 36 L 5.5 36 z"/></svg></a></li>
+       </ul>
+        <ul class="hide">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Contact us</a></li>
+         <li><a href="#">Services</a></li>
+         <li onclick ="hidenav()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M 5.5 9 A 1.50015 1.50015 0 1 0 5.5 12 L 42.5 12 A 1.50015 1.50015 0 1 0 42.5 9 L 5.5 9 z M 5.5 22.5 A 1.50015 1.50015 0 1 0 5.5 25.5 L 42.5 25.5 A 1.50015 1.50015 0 1 0 42.5 22.5 L 5.5 22.5 z M 5.5 36 A 1.50015 1.50015 0 1 0 5.5 39 L 42.5 39 A 1.50015 1.50015 0 1 0 42.5 36 L 5.5 36 z"/></svg></a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <img src="programming-background-with-html-text.jpg" alt="" class="bg">
+        <div class="hero1">
+            <span class="first">Let's Learn Together</span>
+            <span class="second">Coding relates to the process of writing 
+                coder or the set of instructions that guides the Computer or an electronic devices
+                for performing a specific task
+            </span>
+            <form action="">
+                <input type="email" name="email" placeholder="Enter your email">
+                <label for="">Subscribe</label>
+            </form>
+        </div>
+    </section>
+    <section class="hero2">
+        <div class="left1">
+            <p>
+                <span class="bigtext">What is coding?</span>
+                <span class="smalltext">Coding, or programming, is the process of creating sets of instructions that computers understand and execute. It involves using specific languages, like Python, JavaScript, or C++, to write logical sequences of commands. Through coding, developers solve problems by breaking them down into manageable steps called algorithms, employing logical and analytical thinking to design solutions. This skill finds applications in various fields, such as software development, automation, game design, and data analysis. It involves debugging- finding and fixing errors in code and optimizing code for better performance. Continuous learning is crucial in this ever-evolving field, requiring adaptability to new technologies and problem-solving approaches</span>
+            </p>
+        </div>
+        <div class="right1">
+            <img src="Untitled.png" alt="">
+        </div>
+    </section>
+    <section class="hero3">
+        <div class="left1">
+            <p>
+                <span class="bigtext">How to start Coding?</span>
+                <span class="smalltext1">To learn coding, start with a clear goal and select a beginner-friendly language like Python. Utilize online resources such as Codecademy, FreeCodeCamp, or Coursera for structured learning. Practice regularly by writing code, solving problems on platforms like LeetCode or HackerRank, and building small projects. Engage with coding communities for support and collaboration, and seek feedback to improve. Stay persistent, patient, and consistent in your learning. As you gain confidence, explore advanced topics and specialize in areas like web development, data science, or app creation. Embrace coding as a continuous learning journey, gradually advancing your skills through practice and exploration</span>
+            </p>
+        </div>
+        <div class="right1">
+            <img src="image2.jpg" alt="">
+        </div>
+    </section>
+    <footer>
+        COPYRIGHT &COPY; ALL RIGHT RESERVED 2023
+    </footer>
+    <script>
+        function shownav(){
+            var show = document.querySelector('.hide')
+            show.style.display = 'flex'
+        }
+        function hidenav(){
+            var hide = document.querySelector('.hide')
+            hide.style.display='none'
+        }
+    </script>
+    </body>
+    </html>
